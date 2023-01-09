@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="intro">Titre</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sapiente rerum vitae, incidunt. Nulla reprehenderit autem, placeat rerum, fuga expedita consequuntur magni odio reiciendis repudiandae. Voluptatum et maiores soluta ipsam!</p>
+  <p>Incidunt soluta quibusdam ratione illo molestiae minima quia molestias voluptatem numquam sint illum amet unde eveniet deserunt, ducimus excepturi eligendi voluptas maiores dolore minus eos beatae sunt ad dolores? Doloribus?</p>
+  <p>Nesciunt, libero cum vel accusamus fugit voluptatum repudiandae possimus a molestias obcaecati, ducimus dolores, nam! Dolore possimus voluptatem hic dolorum fugiat sint error natus ad quo, quidem! Consequuntur blanditiis, modi.</p>
+  <h2 id="conclusion">Conclusion</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aspernatur corrupti deleniti officiis ipsa alias facilis saepe, labore nam necessitatibus eveniet corporis, accusantium ipsum quam consequuntur aut ducimus atque inventore!</p>
+  <p>Architecto placeat, culpa odit, error ab ipsam qui totam quod, unde eius tempora labore aliquam voluptatum illum? Aliquid, fuga, aliquam. Minus a velit ratione quisquam voluptatum. Debitis officia cupiditate, labore?</p>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <script>
+    // Modifier le contenu de la balise ayant l'id intro par le texte suivant : Un autre texte
+    //$("h1").text("Un autre texte");
+    $("#intro").text("Un autre texte");
+
+    //$("h2").before("<hr>");
+    $("#conclusion").before("<hr>");
+
+    //$("p").last().after(`<p><a href="mailto:test@test.fr">mon email</a></p>`);
+    $("p:last-of-type").after(`<p><a href="mailto:test@test.fr">mon email</a></p>`);
+
+  </script>
+</body>
+</html>
+
+<!--
+    prefix texte suffixe 
+    créer le fichier 15-exo.html 
+    copier coller le code de l'adresse suivante https://sharemycode.fr/cuk
+    1 modifier le contenu textuel du <a href=""> du 1er <li> par "nouvel article"
+    2 modifier le contenu textuel du 3ème <a href=""> de la page par le bloc de html suivant : 
+        <b>information technique</b>
+    3  modifier le contenu textuel du dernier <a href=""></a> par le texte "fin"
+   4 modifier le contenu de l'élément ayant la class .item par le bloc de html suivant : 
+        <p>un peu de texte ajouté via le script</p>
+    5  Ajouter un préfix et un suffixe au titre principal, <h1> de la page
+    6  Ajouter une balise <hr> après <h1>
+    7  Ajouter un paragraphe avant <h1>
+    => support chapitre 3 > section 6 Cas pratique > Cas n°2 
+-->
