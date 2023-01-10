@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit.</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        // en js de base 
+        //document.querySelector("p").setAttribute("id" , "paragraphe"); 
+
+        // en jQuery : ajouter id="paragraphe" à la balise p
+        // $("p").attr("id" , "paragraphe");
+        $("p").prop("id" , "paragraphe");
+
+        // ajouter un attribut class à la balise p
+        // js de base 
+        //document.querySelector("p").classList.add("toto")
+
+        // en jQuery
+        $("p").addClass("toto");
+
+        // ajouter une attribut data-* à la page p
+        // en js de base 
+        //document.querySelector("p").dataset.adresse =  {rue : "75 rue de Paris", cp : 75000, ville : "Paris"};
+
+        // en jQuery
+        $("p").data("adresse" , {rue : "75 rue de Paris", cp : 75000, ville : "Paris"}); // mais n'est pas visible dans le html 
+
+        console.log($("p").data("adresse"))
+        
+    </script>
+</body>
+</html>
+<!--
+    créer le fichier 03-exo.html
+    dans ce fichier vous allez ajouter une balise <nav></nav>
+    installez jquery
+    1 remplir la balise nav avec le html suivant 
+    <ul>
+        <li>Accueil</li>
+        <li>Contact</li>
+    </ul>
+    2 ajouter avant la balise nav la balise <button>menu</button>
+    3 ajouter à la balise <nav> l'attribut id="menu"
+    4 ajouter à la balise <nav> la class="open"
+-->
