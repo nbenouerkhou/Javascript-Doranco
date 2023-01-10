@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>menu</button>
+    <nav>
+        <button>fermer</button>
+        <ul>
+            <li>Accueil</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $("button").first().on("click", function(){
+            $("nav").css("display", "block");
+        });
+       
+        $("nav button").on("click", function(){
+            $("nav").css("display", "none") ;
+        });
+    </script>
+</body>
+</html>
+<!--
+    créer le fichier 06-exo.html 
+    3 bouton onglet1 / onglet2 / onglet 3
+    3 p avec du texte aleatoire
+    si clique sur le 1er bouton => 1er p qui s'affiche et les autres se masquent
+    si clique sur le 2er bouton => 2er p qui s'affiche et les autres se masquent
+    si clique sur le 3er bouton => 3er p qui s'affiche et les autres se masquent
+    // bon appetit rdv 13h30 !!! @ toute suite !!!
+-->
